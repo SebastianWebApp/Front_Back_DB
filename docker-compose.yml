@@ -18,7 +18,7 @@ services:
   # Servicio de la aplicación
   front:
     build:
-      context: /Front
+      context: ./Front
     container_name: front
     image: sebastianwebapp/pruebita1:latest
     ports:
@@ -31,7 +31,7 @@ services:
 
   crud_mysql:
     build:
-      context: /Microservicios/Crud_Mysql
+      context: ./Microservicios/Crud_Mysql
     container_name: crud_mysql
     image: sebastianwebapp/pruebita2:latest
     ports:
