@@ -20,7 +20,7 @@ services:
     build:
       context: /Front
     container_name: front
-    image: melany555/pruebita1:latest
+    image: sebastianwebapp/pruebita1:latest
     ports:
       - "80:80"
     depends_on:
@@ -33,7 +33,7 @@ services:
     build:
       context: /Microservicios/Crud_Mysql
     container_name: crud_mysql
-    image: melany555/pruebita2:latest
+    image: sebastianwebapp/pruebita2:latest
     ports:
       - "3000:3000"
     depends_on:
